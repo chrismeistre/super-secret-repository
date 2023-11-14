@@ -19,7 +19,7 @@
 
     # testing access - hardcoded for now
     if ($dev_mode) {
-      putenv("access_key=\"8OkfHPPQtJB2QLFEJGqkCos9joaduQCgRxP+Zggt\"");
+      putenv("access_key=\"8OkfHRRQtJB2QLFEJGqkC0s9joaduQCgRxP+Zggt\"");
     }
 
     var_dump(getenv());
