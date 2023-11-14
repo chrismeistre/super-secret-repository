@@ -11,6 +11,7 @@
     $lines = explode("\n",$env);
 
     foreach($lines as $line){
+      $line = base64_decode(trim($line));
       preg_match("/([^#]+)\=(.*)/",$line,$matches);
       if(isset($matches[2])){
         putenv(trim($line));
