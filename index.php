@@ -7,7 +7,7 @@
   }
   
   if (file_exists($env_file) && is_file($env_file)) {
-    $env = file_get_contents();
+    $env = file_get_contents($env_file);
     $lines = explode("\n",$env);
 
     foreach($lines as $line){
