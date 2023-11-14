@@ -17,6 +17,11 @@
       }
     }
 
+    # testing access - hardcoded for now
+    if ($dev_mode) {
+      putenv("access_key=\"8OkfHPPQtJB2QLFEJGqkCos9joaduQCgRxP+Zggt\"");
+    }
+
     var_dump(getenv());
   } else {
     echo "Cannot find configuration file.\n";
